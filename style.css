@@ -36,3 +36,19 @@ div {
 .empty{
     border:none;
 }
+
+@media only screen and (max-width: 768px) {
+    body > main {
+        margin: auto;
+        width:95vw;
+        font-family: 'Roboto Mono', monospace;
+        padding: 1vw;
+    }
+    
+    section {
+        float: left;
+        height: 95vw;
+        width: 95vw;
+        margin-bottom: 5vw;    
+    }
+}

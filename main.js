@@ -7,6 +7,7 @@ let mergedupperLeft = [].concat.apply([], createUpperLeftArray()); // merges the
 let mergedSquare = [].concat.apply([], createSquareArray());
 
 
+
 //Arrays, fill directions and fill modes
 let allArray = [mergedLinear, mergedSpiral, mergedupperLeft, mergedSquare];
 let rasterTypes = [`linear`, `spiral`,`upperLeft`,`square`];
@@ -29,14 +30,14 @@ function createAllDivs(){
 function addClass() {
     let stroke;
     let bgColor;
-    let offset = -2;                        // to offsetts the probalility over time
+    let offset =-2;                        // to offsetts the probalility over time
     for (let i = 1; i <= arrayLength; i++) {       //cycles through all the divs
         let randomNumber = (Math.random() * 3);    //generates random number between 0-2.99
         //_____________________________________ possible cases
         if (randomNumber>=(2-offset)) {
             stroke = `empty`;
             bgColor = "white";                    
-        } else if (randomNumber>1-(offset/8) && randomNumber<=2-(offset/8)) {
+        } else if (randomNumber>1-(offset/8) && randomNumber<2-(offset/8)) {
             stroke = `horizontal`;
             bgColor = "darkgrey";                    
         } else if (randomNumber<=1){                      
@@ -45,9 +46,6 @@ function addClass() {
         }
 
         offset += 0.00125;                       // raises the probalility of empty over time
-
-        let rasterTypes = [`linear`, `spiral`,`upperLeft`,`square`];
-        let fillMode = [`Col`,`Stroke`];
 
         for (let j = 0; j < rasterTypes.length; j++) {
             document.getElementById((rasterTypes[j]+`Stroke`+(i))).className ="";  //resets class of to the div it parses
