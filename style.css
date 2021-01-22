@@ -1,8 +1,43 @@
+/* .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;    
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50%;                      
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+ */
+
+
+
+
 body > main {
     margin: auto;
+    justify-content: center;
     width:64vw;
     font-family: 'Roboto Mono', monospace;
+}
 
+loaderbox {
+    margin: auto;
+    justify-content: center;
+    width:64vw;
+    font-family: 'Roboto Mono', monospace;
 }
 
 section {
@@ -37,6 +72,144 @@ div {
     border:none;
 }
 
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* SPINNER ANIMATION */
+.concentric-spinner {
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.concentric-spinner .spinner-square {
+    position: absolute;
+    border: 1.5px solid rgb(0, 0, 0);
+    animation: concentric-spinner-animation 4s ease-in-out infinite forwards;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.concentric-spinner .spinner-square:nth-child(1) {
+    height: calc(40px / 6 + 0 * 40px / 6);
+    width: calc(40px / 6 + 0 * 40px / 6);
+    animation-delay: calc(30ms * 1);
+}
+
+.concentric-spinner .spinner-square:nth-child(2) {
+    height: calc(40px / 6 + 1 * 40px / 6);
+    width: calc(40px / 6 + 1 * 40px / 6);
+    animation-delay: calc(30ms * 2);
+}
+
+.concentric-spinner .spinner-square:nth-child(3) {
+    height: calc(40px / 6 + 2 * 40px / 6);
+    width: calc(40px / 6 + 2 * 40px / 6);
+    animation-delay: calc(30ms * 3);
+}
+
+.concentric-spinner .spinner-square:nth-child(4) {
+    height: calc(40px / 6 + 3 * 40px / 6);
+    width: calc(40px / 6 + 3 * 40px / 6);
+    animation-delay: calc(30ms * 4);
+}
+
+.concentric-spinner .spinner-square:nth-child(5) {
+    height: calc(40px / 6 + 4 * 40px / 6);
+    width: calc(40px / 6 + 4 * 40px / 6);
+    animation-delay: calc(30ms * 5);
+}
+
+.concentric-spinner .spinner-square:nth-child(6) {
+    height: calc(40px / 6 + 5 * 40px / 6);
+    width: calc(40px / 6 + 5 * 40px / 6);
+    animation-delay: calc(30ms * 6);
+}
+
+.concentric-spinner .spinner-square:nth-child(7) {
+    height: calc(40px / 6 + 6 * 40px / 6);
+    width: calc(40px / 6 + 6 * 40px / 6);
+    animation-delay: calc(30ms * 7);
+}
+
+.concentric-spinner .spinner-square:nth-child(8) {
+    height: calc(40px / 6 + 7 * 40px / 6);
+    width: calc(40px / 6 + 7 * 40px / 6);
+    animation-delay: calc(30ms * 8);
+}
+
+.concentric-spinner .spinner-square:nth-child(9) {
+    height: calc(40px / 6 + 8 * 40px / 6);
+    width: calc(40px / 6 + 8 * 60px / 9);
+    animation-delay: calc(30ms * 9);
+}
+
+.concentric-spinner .spinner-square:nth-child(10) {
+    height: calc(40px / 6 + 9 * 40px / 6);
+    width: calc(40px / 6 + 9 * 40px / 6);
+    animation-delay: calc(30ms * 10);
+}
+
+.concentric-spinner .spinner-square:nth-child(11) {
+    height: calc(40px / 6 + 10 * 40px / 6);
+    width: calc(40px / 6 + 10 * 40px / 6);
+    animation-delay: calc(30ms * 11);
+}
+
+.concentric-spinner .spinner-square:nth-child(12) {
+    height: calc(40px / 6 + 11 * 40px / 6);
+    width: calc(40px / 6 + 11 * 40px / 6);
+    animation-delay: calc(30ms * 12);
+}
+
+.concentric-spinner .spinner-square:nth-child(13) {
+    height: calc(40px / 6 + 12 * 40px / 6);
+    width: calc(40px / 6 + 12 * 40px / 6);
+    animation-delay: calc(30ms * 13);
+}
+
+.concentric-spinner .spinner-square:nth-child(14) {
+    height: calc(40px / 6 + 13 * 40px / 6);
+    width: calc(40px / 6 + 13 * 40px / 6);
+    animation-delay: calc(30ms * 14);
+}
+
+.concentric-spinner .spinner-square:nth-child(15) {
+    height: calc(40px / 6 + 14 * 40px / 6);
+    width: calc(40px / 6 + 14 * 40px / 6);
+    animation-delay: calc(30ms * 15);
+}
+
+.concentric-spinner .spinner-square:nth-child(16) {
+    height: calc(40px / 6 + 15 * 40px / 6);
+    width: calc(40px / 6 + 15 * 40px / 6);
+    animation-delay: calc(30ms * 16);
+}
+
+
+@keyframes concentric-spinner-animation {
+        0%{transform: rotate( 0deg );
+        }20%{transform: rotate( 0deg );
+
+        }100%{transform: rotate( 360deg );
+}
+}
+
 @media only screen and (max-width: 768px) {
     body > main {
         margin: auto;
@@ -46,9 +219,9 @@ div {
     }
     
     section {
-        float: left;
+        display: block;
         height: 95vw;
         width: 95vw;
-        margin-bottom: 5vw;    
+        margin-bottom: 3vw;    
     }
 }

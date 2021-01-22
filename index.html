@@ -5,41 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walk Through Raster</title>
     <link rel="stylesheet" href="style.css">
-    <script async src="main.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
-        </style></head>
+    </style>
+</head>
 
-    <body>
-        <main onclick=addClass() id ="board">
-            <h1>Linear Raster</h1>
-            <article id ="LIN">
-                <section id="linearStroke"></section>
-                <section id="linearCol"></section>
-            </article>
-
-            <h1>Spiral Raster</h1>
-
-            <article id="SPIR">
-                <section id="spiralStroke"></section>  
-                <section id="spiralCol"></section>
-
-            </article>  
-
-            <h1>Left Corner</h1>
-
-            <article id="LEFT">
-                <section id="upperLeftStroke"></section>  
-                <section id="upperLeftCol"></section>
-            </article> 
-
-            <h1>Square Step</h1>
-
-            <article id="SQUAREARRAY">
-                <section id="squareStroke"></section>  
-                <section id="squareCol"></section>
-            </article>  
-    
-        </main>
-</body>
+<body id="body" onclick="addClass()" class="page">
+    <div id="loading" class="loaderbox">
+        <div class="concentric-spinner">
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+            <div class="spinner-square"></div>
+        </div>
+    </div>
+</body>    
+<script async src="main.js"></script>
 </html>
+
