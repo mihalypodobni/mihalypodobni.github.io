@@ -97,7 +97,7 @@ div {
 .concentric-spinner .spinner-square {
     position: absolute;
     border: 1.5px solid rgb(0, 0, 0);
-    animation: concentric-spinner-animation 4s ease-in-out infinite forwards;
+    animation: concentric-spinner-animation 4s ease-in-out 1 forwards;
     margin: auto;
     bottom: 0;
     left: 0;
